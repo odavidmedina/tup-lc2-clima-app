@@ -7,13 +7,14 @@
     <title>Clima app</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/add-city.css">
     <link rel="shortcut icon" href="./img/Sol.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <h1>
-            <img src="./img/Sol.ico" alt="IMG">
+            <img src="./img/Sol2.png" alt="IMG">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -29,11 +30,20 @@
         <h2>Agregar Ciudad</h2>
         <section id="add_city">
             <!-- Sección donde se debe colocar el formulario, con el select y el botón de consultar -->
-            <form action="/form.php">
-                <label for="add_city">Ingrese la Nueva Ciudad: </label>
-                <input type="text">
-                <input type="button" class="button" value="Agregar">
+            <form action="">
+                <label for="add_city">Ingrese la ciudad a ingresar: </label>
+                <br>
+                <input class="input-box" type="text">
+                <br>
+                <input class="input-button" name="add_city" id="add_city" type="button" class="button" value="Agregar"> 
             </form>
+        </section>
+        <section>
+            <div class="city_status">
+                <p>Ciudad agregada con éxito</p>
+                <p>Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</p>
+                <p>La ciudad ya se encuentra almacenada</p>
+            </div>
         </section>
     </main>
     <footer>

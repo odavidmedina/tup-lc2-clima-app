@@ -7,13 +7,14 @@
     <title>Clima app</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/index.css">
     <link rel="shortcut icon" href="./img/Sol.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <h1>
-            <img src="./img/Sol.ico" alt="IMG">
+            <img src="./img/Sol2.png" alt="IMG">
             <span>Clima App</span> 
         </h1>
         <nav>
@@ -29,25 +30,25 @@
         <h2>El Clima Ahora</h2>
         <section id="form-city-list">
             <!-- Sección donde se debe colocar el formulario, con el select y el botón de consultar -->
-            <form action="/form.php">
+            <form action="">
                 <select name="seleccionar_ciudad" id="seleccionar_ciudad">
                     <option value="" disabled selected>Seleccionar ciudad</option>
                     <option value="ROSARIO">Rosario</option>
                     <option value="RAFAELA">Rafaela</option>
                 </select>
-                <input class="button" type="button" value="Consultar">
+                <input name="ask" id="ask" class="button" type="button" value="Consultar">
             </form>
         </section>
-        <section id="section-weather-result">
+        <section class="section-card" id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
             <div class="card">
                 <h3 class="h3">Rosario</h3>
                 <img class="h1>img" src="http://openweathermap.org/img/wn/01d@2x.png" alt="imagen_de_punto_rojo">
-                <p>Temperatura 25.31°</p>
-                <p>Sensación térmica: 24.65°</p>
-                <p>Humedad: 29%</p>
-                <p>Velocidad del viento: 4.63km/h</p>
-                <p>Presión: 1011P</p>
+                <p>Temperatura 13.76°</p>
+                <p>Sensación térmica: 12.91°</p>
+                <p>Humedad: 66%</p>
+                <p>Velocidad del viento: 2.06km/h</p>
+                <p>Presión: 1024P</p>
             </div>
         </section>
     </main>
